@@ -818,6 +818,12 @@ li::marker{
   #828282;
   background: #000000;
 }
+@media (max-width: 428px){
+.right-section .input-group input,
+.right-section .input-group select{
+    width: 100%;
+  }
+  }
 .right-section .input-group input:focus ~label,
 .right-section .input-group input:valid ~label{
 	color:rgb(121, 87, 201);
