@@ -1661,8 +1661,8 @@ p.timer-wrapper-second{
   }
 .time-text{
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 16px;
   color: #EC5171;
   margin-bottom: 0px;
 }
@@ -1708,8 +1708,8 @@ p.timer-wrapper-second{
 }
 .topic{
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 16px;
   color: #EC5171;
   margin-bottom: 0;
   margin-top: 8px;
@@ -2006,14 +2006,20 @@ section.phone-number-section{
   display: flex;
   align-items: center;
 }
-@media(max-width:1024px){
-  .navigating-section,
-  .rentcontrol-section,
-  .commercial-section,
-  .mastering-section{
-    height: auto;
-  }
+.navigating-section,
+.rentcontrol-section,
+.commercial-section,
+.mastering-section{
+  height: auto;
 }
+.navigating-section .row,
+.rentcontrol-section .row,
+.commercial-section .row,
+.mastering-section .row
+{
+  --bs-gutter-x: 30px;
+}
+
 @media(max-width:915px){
   .right-section
   {
