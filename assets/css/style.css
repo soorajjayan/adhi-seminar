@@ -2054,6 +2054,16 @@ section.phone-number-section{
     display: block;
     color: white;
   }
+}
+  @media (max-width: 991px) {
+    #navbar {
+      margin-left: 20px;
+    }
+  }
+    @media (max-width: 428px) {
+      #navbar {
+        margin-left: 0px;
+      }
 
   .navbar ul {
     display: none;
