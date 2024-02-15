@@ -509,6 +509,7 @@ li::marker{
   background: #fff;
   border-top: 1px solid rgba(217, 217, 217, 0.40);
   /* box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25); */
+  height: 69px;
 
 }
 
@@ -517,8 +518,13 @@ li::marker{
 } */
 
 .navbar .dropdown ul a {
-  padding: 25px 2px;
+  padding: 34px 2px !important;
   text-transform: none;
+}
+@media (max-width: 428px){
+  .navbar .dropdown ul a {
+   padding: 10px 2px !important;
+  }
 }
 .menu-wrapper{
   padding: 10px 0px;
@@ -658,6 +664,7 @@ li::marker{
 .navbar-mobile .dropdown>.dropdown-active {
   display: flex !important;
   flex-direction: column !important;
+  height: auto;
 }
 /* test */
 .mobile-nav-toggle {
@@ -868,7 +875,7 @@ line-height: 1px;
     font-size: 12px !important;
  }
  .drp-down-content{
-  width: 2662px !important;
+  width: 2802px !important;
  }
 }
 @media (max-width: 924px){
@@ -901,6 +908,7 @@ transition-delay: 0.3s; */
 transition: all .5s ease-in-out; */
 transform-origin: left top;
 /* transform: scaleY(1); */
+background: #000;
 }
 
 .navbar .dropdown .dropdown ul {
@@ -1112,6 +1120,14 @@ transform-origin: left top;
     text-align: center;
     }
     }
+    @media (max-width:1024px){
+      .navigating-section,
+      .rentcontrol-section,
+      .commercial-section,
+      .mastering-section{
+          padding: 80px 0px 80px 0px !important;
+          }
+          }
 .slider-mid-para p{
   font-family: 'Poppins', sans-serif;
   color: #ffff;
@@ -1316,6 +1332,7 @@ select.form-select option:hover{
 }
 .right-section select option{
   background-color: #383838;
+  border: none !important;
 }
 /* .join-feilds select{
   background: url(../img/Union.png);
@@ -1671,11 +1688,11 @@ p.timer-wrapper-second{
 }
 .slide-content{
   text-transform: uppercase;
-  padding-left: 40px;
+  /* padding-left: 40px; */
 }
 @media (max-width:915px){
-  .slide-content{
-  padding-left: 0;  }
+  /* .slide-content{
+  padding-left: 0;  } */
   }
 .topic-para{
   text-transform: none;
@@ -1985,7 +2002,7 @@ section.phone-number-section{
 .commercial-section,
 .mastering-section{
   height: 650px;
-  padding: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px ;
   display: flex;
   align-items: center;
 }
@@ -2069,7 +2086,7 @@ section.phone-number-section{
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #0000;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -2363,9 +2380,9 @@ background: linear-gradient(90deg, rgba(185,193,254,1) 36%, rgba(238,174,202,1) 
       border-bottom: 1px solid #f5f5f5;
       border-left: none;
     }
-    .blog-border{
+    /* .blog-border{
       border-bottom: 1px solid #f5f5f5;
-    }
+    } */
     .main-bottom span{
       margin-left:0px;
     }
