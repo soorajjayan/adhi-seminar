@@ -897,10 +897,10 @@ line-height: 1px;
   /* transition-duration: 0.5s;
 transition-timing-function: ease-in;
 transition-delay: 0.3s; */
-transition: all 1s ease-in-out !important;
-transition: all .5s ease-in-out;
+/* transition: all 1s ease-in-out !important;
+transition: all .5s ease-in-out; */
 transform-origin: left top;
-transform: scaleY(1);
+/* transform: scaleY(1); */
 }
 
 .navbar .dropdown .dropdown ul {
@@ -915,7 +915,7 @@ transform: scaleY(1);
   top: 0;
   left: 100%;
   /* visibility: visible; */
-  transition: all .5s ease-in-out;
+  /* transition: all .5s ease-in-out; */
  
 }
 
@@ -1410,6 +1410,7 @@ p.timer-wrapper-second{
   justify-content: center;
   width: 100%;
   padding: 0px 60px;
+  align-items: baseline;
 }
 .timer-value-wrapper{
   width: 100px;
@@ -1440,6 +1441,7 @@ p.timer-wrapper-second{
   font-weight: 900;
   letter-spacing: 3%;
   color: white;
+  height: 55px;
 }
 .count-comma{
   font-size: 20px;
@@ -1642,7 +1644,7 @@ p.timer-wrapper-second{
   }
 .time-text{
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   color: #EC5171;
   margin-bottom: 0px;
@@ -1689,8 +1691,8 @@ p.timer-wrapper-second{
 }
 .topic{
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 20px;
   color: #EC5171;
   margin-bottom: 0;
   margin-top: 8px;
@@ -1738,8 +1740,9 @@ p.timer-wrapper-second{
   font-weight: 400;
   font-size: 15px;
   color: #fff;
-  padding-bottom: 42px;
+  /* padding-bottom: 42px; */
   text-align: justify;
+  margin-bottom: 0;
 }
 .about-para{
   width: 813px;
@@ -1982,6 +1985,9 @@ section.phone-number-section{
 .commercial-section,
 .mastering-section{
   height: 650px;
+  padding: 0px 0px 0px 0px !important;
+  display: flex;
+  align-items: center;
 }
 @media(max-width:1024px){
   .navigating-section,
@@ -2205,7 +2211,7 @@ section.phone-number-section{
     transition: all .5s ease-in-out !important;
     transition: all .5s ease-in-out;
     transform-origin: left top;
-    transform: scaleY(0);
+    /* transform: scaleY(0); */
 }
 .drp-down-content:target{
   transform: scaleY(1);
