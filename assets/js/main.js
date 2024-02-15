@@ -127,7 +127,13 @@
     },
     true
   );
-
+  $(document).ready(function () {
+    // Add your custom class to the select box
+    $(".custom-select-color").on("shown.bs.select", function () {
+      // Add a class to the dropdown menu when the select box is opened
+      $(".custom-select-color .bs-select-menu").addClass("custom-select-color");
+    });
+  });
   /**
    * Scrool with ofset on links with a class name .scrollto
    */

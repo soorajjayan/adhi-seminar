@@ -953,7 +953,7 @@ transform: scaleY(1);
   background-position: center;   */
   width: 100%;
   height: 100%;
-  animation: breath 2s linear;
+  animation: breath 14s linear infinite;
   background: url("../img/slider-bg.png") center center no-repeat;
   /* margin-top: 74px;
   /* animation: zoom 12s linear infinite;
@@ -962,6 +962,7 @@ transform: scaleY(1);
   background-position: center;
   background-repeat: no-repeat; */
  }
+
  @media (max-width: 1024px){
   .hero-section{
     animation: breath-1024 8s linear infinite;
@@ -983,7 +984,7 @@ transform: scaleY(1);
   }
  }
  
-/* @keyframes breath-320 {
+@keyframes breath-320 {
     0%   { background-size: 1300% auto; }
   50% { background-size: 1350% auto; }
   100% { background-size: 1300% auto; }
@@ -1002,14 +1003,11 @@ transform: scaleY(1);
   0%   { background-size: 220% auto; }
 50% { background-size: 240% auto; }
 100% { background-size: 220% auto; }
-  } */
-@keyframes breath {
-    0%   { 
-      opacity:0 ;
-    }
-  /* 50% { background-size: 180% auto; } */
-  100% { opacity: 1;
   }
+@keyframes breath {
+    0%   { background-size: 160% auto; }
+  50% { background-size: 180% auto; }
+  100% { background-size: 160% auto; }
     }
 
 .nav-top-buttons a {
@@ -1228,7 +1226,8 @@ transform: scaleY(1);
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: #fff;
-  height: 41px;
+  /* height: 55px; */
+  letter-spacing: 1px;
 }
 @media (max-width: 428px){
  .right-section .submit-button{
@@ -1315,6 +1314,12 @@ select.form-select option:hover{
     no-repeat !important; */
     background: url(../img/Union.png);
 }
+.right-section select option{
+  background-color: #383838;
+}
+/* .join-feilds select{
+  background: url(../img/Union.png);
+} */
 
 .right-section select.arrow-creation
  {
@@ -1442,8 +1447,13 @@ p.timer-wrapper-second{
   font-weight: 900;
   letter-spacing: 3%;
   color: white;
-  margin-top: 14px;
+  margin-top: 24px;
   margin-left: 10px;
+}
+@media (min-width: 428px){
+  .count-comma{
+    margin-top: 14px !important;
+  }
 }
 @media (max-width: 768px) and (min-width: 428px){
   .count-comma{
@@ -1500,7 +1510,7 @@ p.timer-wrapper-second{
   height: 55px;
   border-radius: 0;
   /* width: 331px; */
-  background: #bdbdbd1c;
+  background-color: #bdbdbd17;
 }
 @media (max-width:1024px){
   .join-feilds input,
@@ -2375,12 +2385,12 @@ background: linear-gradient(90deg, rgba(185,193,254,1) 36%, rgba(238,174,202,1) 
 }
 
 
-.navigating-section .guest-slide-img,
+/* .navigating-section .guest-slide-img,
 .commercial-section .guest-slide-img,
 .mastering-section .guest-slide-img,
 .rentcontrol-section .guest-slide-img{
   height: 496px !important;
-}
+} */
 @media (max-width: 1024px){
   .navigating-section .guest-slide-img,
 .commercial-section .guest-slide-img,
