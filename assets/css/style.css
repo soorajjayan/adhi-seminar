@@ -981,26 +981,26 @@ background: #000;
     animation: breath-915 8s linear infinite;
   }
  }
- @media (max-width: 425px){
+ @media (max-width: 428px){
   .hero-section{
-    animation: breath-425 8s linear infinite;
+    animation: breath-428 8s linear infinite;
   }
  }
- @media (max-width: 320px){
+ @media (max-width: 375px){
   .hero-section{
-    animation: breath-320 8s linear infinite;
+    animation: breath-375 8s linear infinite;
   }
  }
  
-@keyframes breath-320 {
+@keyframes breath-375 {
     0%   { background-size: 1300% auto; }
   50% { background-size: 1350% auto; }
   100% { background-size: 1300% auto; }
     }
- @keyframes breath-425 {
-  0%   { background-size: 1070% auto; }
-50% { background-size: 1050% auto; }
-100% { background-size: 1070% auto; }
+ @keyframes breath-428 {
+  0%   { background-size: 1200% auto; }
+50% { background-size: 1000% auto; }
+100% { background-size: 1200% auto; }
   }
  @keyframes breath-915 {
   0%   { background-size: 470% auto; }
@@ -1013,9 +1013,9 @@ background: #000;
 100% { background-size: 220% auto; }
   }
 @keyframes breath {
-    0%   { background-size: 160% auto; }
-  50% { background-size: 180% auto; }
-  100% { background-size: 160% auto; }
+    0%   { background-size: 180% auto; }
+  50% { background-size: 200% auto; }
+  100% { background-size: 180% auto; }
     }
 
 .nav-top-buttons a {
@@ -1142,7 +1142,7 @@ background: #000;
 .slide-fourth-para h4{
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 29px;
   color: #ffff;
   line-height: 37px;
 }
@@ -1433,6 +1433,12 @@ p.timer-wrapper-second{
   width: 100px;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 360px){
+  
+  .timer-value-wrapper{
+    width: 80px;
+  }
 }
 .time-details{
   display: flex;
@@ -2006,12 +2012,12 @@ section.phone-number-section{
   display: flex;
   align-items: center;
 }
-.navigating-section,
+/* .navigating-section,
 .rentcontrol-section,
 .commercial-section,
 .mastering-section{
   height: auto;
-}
+} */
 .navigating-section .row,
 .rentcontrol-section .row,
 .commercial-section .row,
@@ -2438,11 +2444,19 @@ background: linear-gradient(90deg, rgba(185,193,254,1) 36%, rgba(238,174,202,1) 
   height: 540px !important;
 }
 }
-@media (max-width: 915px){
+@media (max-width: 428px){
   .navigating-section .guest-slide-img,
 .commercial-section .guest-slide-img,
 .mastering-section .guest-slide-img,
 .rentcontrol-section .guest-slide-img{
+  height: auto !important;
+}
+}
+@media (max-width: 915px){
+  .navigating-section, 
+.commercial-section, 
+.mastering-section, 
+.rentcontrol-section {
   height: auto !important;
 }
 }
